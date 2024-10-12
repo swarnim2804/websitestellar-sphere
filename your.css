@@ -23,8 +23,8 @@
   font-size: 2.8rem;
 }
 #para1{
-  height: 55%;
-  width: 50%;
+  height: 50%;
+  width: 45%;
 }
 #para1 p{
   font-size: 1rem;
@@ -121,8 +121,8 @@ font-size: 1.8rem;
     font-size: 2.4rem;
   }
   #para1{
-    height: 50%;
-    width: 45%;
+    height: 45%;
+    width: 40%;
   }
   #para1 p{
     font-size: 0.9rem;
@@ -195,7 +195,7 @@ font-size: 1.8rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:1442px){
+@media (min-width:1281px) and (max-width:1442px){
 
   #blue h1{
     font-size: 3rem;
