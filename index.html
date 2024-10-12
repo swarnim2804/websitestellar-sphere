@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dora Explorer - 3D Asteroid</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles1.css">
+  <link rel="stylesheet" href="styles4.css">
+  <link rel="stylesheet" href="your.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<header>
+  <div id="nav">
+    <img src="space.png" alt="Space Logo">
+    <div id="menu">
+      <a href="#home">Home</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#mystery">Mystery</a>
+      <a href="#solar-system">Solar System</a>
+      <a href="#info">Info</a>
+      <a href="#explore">Explore Mars</a>
+      <a href="#game">Game</a>
+      
+    </div>
+  </div>
+</header>
+
+<section id="home">
+  <div class="container">
+    <h1 class="top">Welcome to StellarSphere</h1>
+    <div class="spaceship" id="spaceship">
+        <img src="ufo11.png" alt="Spaceship" />
+    </div>
+    <div class="journey-container" id="journeyContainer">
+        <button id="startJourney">Start Journey</button>
+    </div>
+    <div class="hidden transition-buttons" id="transitionButtons">
+        <h2>Choose your destination</h2> <!-- Added heading here -->
+        <img id="ConstellationQuest" src="cq.jpg" alt="Constellation Quest" class="button-image" />
+        <img id="GalacticRealm" src="gr.jpg" alt="Galactic Realm" class="button-image" />
+    </div>
+    <audio id="spaceSound" src="amongus.mp3"></audio>
+    <audio id="questSound" src="quest-sound.mp3"></audio>
+    <audio id="ufoSound" src="alienufo.mp3"></audio>
+
+    <div class="space-journey hidden" id="spaceJourneyAnimation">
+        <div class="star"></div>
+        <div class="planet"></div>
+    </div>
+</div>
+</section>
+<section id="timeline">
+    <div id="clock">
+      <video class="clock-background" autoplay muted loop>
+        <source src="clock.mp4" type="video/mp4">
+    </video>
+    <button id="button1"></button>
+    <button id="button2"></button>
+    <button id="button3"></button>
+  </div>
+  <div id="past" style="display: none;">
+   <div id="div1">
+<div id="yuri">
+    <h1>First Human in Space</h1>
+</div>
+<div id="yuri1">
+  <div id="yuri-img"></div>
+  <div id="pyuri1">
+    <p>
+      First Human in Space -<strong> Yuri Gagarin</strong>(1961)
+On April 12, 1961, Soviet cosmonaut Yuri Gagarin made history by becoming the first human to journey into outer space. 
+This event marked a significant milestone in the Cold War space race between the United States and the Soviet Union.
+Gagarin's spacecraft, Vostok 1, completed one orbit around the Earth in 108 minutes, reaching a maximum altitude of 327 kilometers (203 miles).
+    </p>
+  </div>
+</div>
+<div id="yuri2">
+  <div id="pyuri2">
+    <p>
+      Gagarin's achievement was both a scientific and political triumph for the Soviet Union. 
+      It demonstrated the capability to send a human into space and safely return them to Earth, 
+      a feat that had enormous implications for future space exploration. Gagarin instantly became a global hero,
+       celebrated not only in the USSR but also internationally. His iconic phrase, "Poyekhali!" ("Let's go!") as Vostok
+        1 took off, became symbolic of humankind's daring quest to explore the unknown.
+    </p>
+  </div>
+<div id="yuri-img1"></div>
+</div>
+   </div>
+
+   <div id="div2">
+<div id="past-video">
+  <video class="video-background1" autoplay muted loop>
+    <source src="old.mp4" type="video/mp4">
+</video>
+</div>
+<button id="button1-next">next</button>
+   </div>
+  </div>
+
+  <div id="past1" style="display: none;">
+
+      <div id="div3">
+        <div id="neil">
+          <h1>Apollo 11 Moon Landing (1969)</h1>
+        </div>
+        <div id="neil1">
+          <div id="neil-img"></div>
+          <div id="pneil1">
+            <p>On July 20, 1969, the United States accomplished one of the most significant milestones in human history with
+              the Apollo 11 mission, when Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon.
+               Their colleague, Michael Collins, remained in lunar orbit aboard the Command Module Columbia, while Armstrong and
+                Aldrin descended to the Moon's surface in the Lunar Module Eagle.
+           </p>
+          </div>
+        </div>
+        <div id="neil2">
+          <div id="pneil2">
+            <p>
+              Armstrong's famous words as he stepped onto the lunar surface, "That's one small step for [a] man,
+               one giant leap for mankind," captured the monumental nature of the achievement.
+                The astronauts spent approximately 21 hours on the Moon, conducting experiments,
+                 collecting lunar soil and rock samples, and planting the American flag. The mission demonstrated the potential 
+                 of human space exploration, inspiring generations to pursue space science and exploration.
+            </p>
+          </div>
+          <div id="neil-img1"></div>
+        </div>
+        <div id="neil3">
+          <div id="pneil3">
+            <p>
+              The Apollo 11 mission was not just a scientific achievement but also a symbolic victory for the United States
+               during the Cold War, showcasing its technological prowess in the space race against the Soviet Union. Apollo 11
+                remains a pivotal moment in space history, embodying the human spirit of exploration and curiosity.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="div4">
+        <div id="neil-video">
+          <video class="video-background1" autoplay muted loop>
+            <source src="apollo.mp4" type="video/mp4">
+        </video>
+        </div>
+      </div>
+      <div class="a"><button id="button2-past">Back to Present</button></div>
+      <div class="a">  <button id="button3-past">Go to Future</button></div>
+      
+    
+  </div>
+
+
+  <div id="present" style="display: none;">
+
+
+    <div id="div5">
+      <div id="iss">
+        <h1>International Space Station (ISS) </h1>
+      </div>
+      <div id="iss1">
+        <div id="iss-img"></div>
+        <div id="piss1">
+          <p>The International Space Station (ISS) is a remarkable testament to global cooperation in space. Launched in November 
+            2000, the ISS has been continuously occupied by astronauts from various countries, becoming a symbol of peaceful 
+            international collaboration. It orbits the Earth at an altitude of about 400 kilometers (250 miles) and serves as a unique
+             laboratory for scientific research and technology development in microgravity.
+          </p>
+        </div>
+      </div>
+      <div id="iss2">
+        <div id="piss2">
+          <p>
+            The ISS is a joint project involving NASA (United States), Roscosmos (Russia), JAXA (Japan), ESA (Europe), and CSA (Canada). 
+            Over the years, astronauts aboard the ISS have conducted thousands of experiments across various fields, including biology,
+             physics, astronomy, and material sciences. The station has also contributed to advancements in medicine, climate research,
+              and engineering.
+          </p>
+        </div>
+        <div id="iss-img1"></div>
+      </div>
+      <div id="iss3">
+        <div id="piss3">
+          <p>
+            The ISS plays a crucial role in preparing for future missions to the Moon and Mars, as it allows astronauts to test the
+             effects of long-duration spaceflight on the human body. As of now, the ISS is expected to operate at least until 2030,
+              after which it may be replaced by commercial space stations or new government-led projects.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="div6">
+      <div id="iss-video">
+        <video class="video-background1" autoplay muted loop>
+          <source src="iss5.mp4" type="video/mp4">
+      </video>
+      </div>
+      <button id="button2-next">next</button>
+    </div>
+    
+  </div>
+
+  <div id="present1" style="display: none;">
+
+    <div id="div7">
+      <div id="yaan">
+          
+  <h1>SPACE TOURISM</h1>
+      </div>
+      <div id="yaan1">
+        <div id="yaan-img"></div>
+        <div id="pyaan1">
+          <p>Space tourism is rapidly becoming a reality, with companies like SpaceX, Blue Origin, and Virgin Galactic leading the charge.
+            These private firms are offering suborbital and orbital flights for civilians, opening the door for non-astronauts to experience space travel.
+             Virgin Galactic, for instance, has begun taking tourists on short suborbital flights, allowing passengers to experience weightlessness and see Earth from space for a few minutes before returning.
+         </p>
+        </div>
+      </div>
+      <div id="yaan2">
+        <div id="pyaan2">
+          <p>
+
+            SpaceX, meanwhile, is pushing the boundaries by offering longer, more ambitious trips.
+             Its Inspiration4 mission successfully sent civilians into orbit for three days in 2021, and future plans include sending private passengers around the Moon.
+              Blue Origin, founded by Jeff Bezos, also offers suborbital flights through its New Shepard rocket,
+               making space more accessible to those with the means to pay
+          </p>
+        </div>
+      <div id="yaan-img1"></div>
+      </div>
+         </div>
+      
+         <div id="div8">
+      <div id="yaan-video">
+        <video class="video-background1" autoplay muted loop>
+          <source src="tour4.mp4" type="video/mp4">
+      </video>
+      </div> 
+      <button id="button1-present">Back to Present</button>
+      <button id="button3-present">Go to Future</button>
+      
+         </div>
+   
+  </div>
+  <div id="future" style="display: none;">
+    <div id="div9">
+      <div id="mars">
+        <h1>Mars Mission - Human Exploration (2030s)</h1>
+      </div>
+      <div id="mars1">
+        <div id="mars-img"></div>
+        <div id="pmars1">
+          <p>
+            Human exploration of Mars has long been a goal for space agencies around the world. Both NASA and private
+            companies like SpaceX are working toward sending humans to the Red Planet by the 2030s. Mars is viewed as the next great frontier
+             for human space exploration, with the potential for discovering evidence of past life, resources for future colonies, and the ability
+              to extend human presence beyond Earth.
+            </p>
+        </div>
+      </div>
+      <div id="mars2">
+        <div id="pmars2">
+          <p>
+            Meanwhile, SpaceX is leading efforts with its Starship vehicle, designed to carry humans to Mars. The company's long-term vision 
+            involves building a self-sustaining colony on Mars, which would allow humanity to become a "multiplanetary species." The challenges 
+            are immense: long-duration space travel, radiation exposure, and creating life support systems on Mars. But the technological 
+            and scientific progress in recent years has brought us closer than ever to realizing this goal.
+            </p>
+         
+        </div>
+        <div id="mars-img1"></div>
+      </div>
+      <div id="mars3">
+        <div id="pmars3">
+          <p>
+            NASA's Artemis program, focused on returning humans to the Moon, is seen as a stepping stone for human Mars missions.
+             By developing the infrastructure and technology to support sustainable operations on the Moon, space agencies hope to learn how to 
+             live and work on Mars.
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="div10">
+      <div id="mars-video">
+        <video class="video-background1" autoplay muted loop>
+          <source src="mars4.mp4" type="video/mp4">
+      </video>
+      </div>
+      <button id="button3-next">next</button>
+    </div>
+  </div>
+
+
+  <div id="future1" style="display: none;">
+    <div id="div11">
+      <div id="travel">
+        <h1>Apollo 11 Moon Landing (1969)</h1>
+      </div>
+      <div id="travel1">
+        <div id="travel-img"></div>
+        <div id="ptravel1">
+          <p>On July 20, 1969, the United States accomplished one of the most significant milestones in human history with
+            the Apollo 11 mission, when Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon.
+             Their colleague, Michael Collins, remained in lunar orbit aboard the Command Module Columbia, while Armstrong and
+              Aldrin descended to the Moon's surface in the Lunar Module Eagle.
+         </p>
+        </div>
+      </div>
+      <div id="travel2">
+        <div id="ptravel2">
+          <p>
+            Armstrong's famous words as he stepped onto the lunar surface, "That's one small step for [a] man,
+             one giant leap for mankind," captured the monumental nature of the achievement.
+              The astronauts spent approximately 21 hours on the Moon, conducting experiments,
+               collecting lunar soil and rock samples, and planting the American flag. The mission demonstrated the potential 
+               of human space exploration, inspiring generations to pursue space science and exploration.
+          </p>
+        </div>
+        <div id="travel-img1"></div>
+      </div>
+      <div id="travel3">
+        <div id="ptravel3">
+          <p>
+            The Apollo 11 mission was not just a scientific achievement but also a symbolic victory for the United States
+             during the Cold War, showcasing its technological prowess in the space race against the Soviet Union. Apollo 11
+              remains a pivotal moment in space history, embodying the human spirit of exploration and curiosity.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="div12">
+      <div id="travel-video">
+        <video class="video-background1" autoplay muted loop>
+          <source src="time.mp4" type="video/mp4">
+      </video>
+      </div>
+      <button id="button1-future">go to past</button>
+    <button id="button2-future">back to present</button>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="mystery">
+  <div id="scene">
+      <video class="video-background" autoplay muted loop>
+    <source src="background.mp4" type="video/mp4">
+</video>
+    <button id="mysteryButton1">Alien's Universe</button>
+    <button id="mysteryButton2">Parallel World</button>
+  </div>
+
+  <div id="button1section" style="display: none;">
+    
+    <audio autoplay>
+      <source src="alien.mp3" type="audio/mpeg">
+    </audio>
+    <lottie-player 
+      id="ufoAnimation"
+      src="https://lottie.host/ccfb3ddc-085c-4485-a421-b8bfd042495a/nrm1TViNww.json" 
+      background="transparent" 
+      speed="1" 
+      style="width: 300px; height: 300px;" 
+      loop  
+      autoplay 
+      direction="1" 
+      mode="normal">
+    </lottie-player>
+    <div id="text">
+      <h1>ALIEN'S WORLD</h1>
+    </div>
+    <div id="video">
+      <video class="video" controls>
+        <source src="alien1.mp4" type="video/mp4">
+        
+    </video>
+    </div>
+    <div id="para1">
+      <div id="para2">
+        <p>
+          Here are ten notable alien encounter incidents that have captured public attention over the years:
+        </p>
+        <p>
+          1. Roswell Incident (1947): A mysterious object crashed near Roswell, New Mexico, sparking theories about extraterrestrial spacecraft and government cover-ups. The U.S. military initially stated it was a "flying disc," later claiming it was a weather balloon.
+        </p>
+        <p>
+          2. Phoenix Lights (1997): Thousands of people reported seeing a massive V-shaped formation of lights over Phoenix, Arizona. The incident remains unexplained, with theories ranging from military flares to alien spacecraft.
+        </p>
+        <p>
+          3. Betty and Barney Hill Abduction (1961): The Hills claimed to have been abducted by aliens while driving in New Hampshire. Their detailed account included a star map and medical examinations, which became a landmark case in UFO lore.
+        </p>
+        <p>
+          4. Travis Walton Abduction (1975): Logger Travis Walton disappeared for five days after encountering a UFO in Arizona. He later described being taken aboard the craft, leading to widespread media coverage and a film adaptation.
+        </p>
+        <p>
+          5. The Rendlesham Forest Incident (1980): Often referred to as "Britain's Roswell," this incident involved U.S. military personnel witnessing unexplained lights and a triangular craft near a military base in Suffolk, England.
+        </p>
+        <p>
+          6. The Westall UFO Encounter (1966): Over 200 students and teachers at Westall High School in Melbourne, Australia, reported seeing a flying saucer hover over the school. The event was captured in photographs, but official explanations remain elusive.
+        </p>
+        <p>
+          7. The Allagash Abductions (1976): Four friends claimed to have been abducted by aliens during a camping trip in Maine. They underwent hypnosis to recall their experiences, which included similar details of medical examinations.
+        </p>
+        <p>
+          8. The Kelly-Hopkinsville Encounter (1955): Residents of Kelly and Hopkinsville, Kentucky, reported a confrontation with small, humanoid creatures outside a farmhouse. The incident led to a gunfight and remains one of the most famous cases of alleged alien contact.
+        </p>
+        <p>
+          9. The Tic Tac UFO Incident (2004): U.S. Navy pilots encountered a fast-moving, tic-tac-shaped object off the coast of California. The incident gained renewed attention after the release of military footage and official acknowledgment of UFO investigations.
+        </p>
+        <p>
+          10. The Stephen Greer Disclosure Project (2001): Dr. Steven Greer gathered testimony from numerous former military and government officials claiming knowledge of extraterrestrial encounters and cover-ups, sparking public interest in UFO phenomena.
+        </p>
+      </div>
+     
+    </div>
+    
+  </div>
+
+  <div id="button2section" style="display: none;">
+    <div id="starfield" style="width: 100%; height: 100vh; position: relative;">
+      <!-- Lottie Animations -->
+      <lottie-player id="player1" src="https://lottie.host/581086ff-60d9-4395-b4a7-176034c88c2f/oezUD9VfX4.json" background="##000000" speed="1" style="width: 300px; height: 300px" loop  autoplay direction="-1" mode="normal"></lottie-player>
+      <lottie-player id="player2"src="https://lottie.host/581086ff-60d9-4395-b4a7-176034c88c2f/oezUD9VfX4.json" background="##000000" speed="1" style="width: 300px; height: 300px" loop  autoplay direction="1" mode="normal"></lottie-player>
+      <div id="redBox">
+        <p>A parallel universe is the eerie idea that countless worlds exist right beside ours—hidden, unreachable. In these universes, reality twists: events unfold differently, versions of us live alternate lives. Imagine crossing into one, where the familiar feels wrong, where the laws of physics warp. It's a concept from the multiverse theory, shrouded in mystery, lurking at the edges of science, leaving us to wonder: what if another world is just a step away?</p>
+      </div>
+      <div id="blue">
+        <h1> WELCOME TO THE PARALLEL WORLD</h1>
+      </div>
+      <div id="green">
+        <p>Imagine a reality where countless universes exist side by side—parallel worlds, unseen but just a breath away. Each universe, a twist in the fabric of space, holds different versions of us, where decisions lead to new paths, creating endless possibilities.
+
+          Quantum mechanics suggests that every choice we make could spawn a new universe, a place where things played out differently.</p>
+      </div>
+      <div id="img">
+      </div>
+      <div id="img1">
+
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section id="solar-system">
+   <!-- Sun -->
+   <div class="planet" id="sun" onclick="showPlanetInfo('sun')">
+    <img src="sun2-modified.png" alt="Sun">
+</div>
+
+<!-- Mercury -->
+<div class="orbit mercury">
+    <div class="planet" id="mercury" onclick="showPlanetInfo('mercury')">
+        <img src="mercury1-modified.png" alt="Mercury">
+    </div>
+</div>
+
+<!-- Venus -->
+<div class="orbit venus">
+    <div class="planet" id="venus" onclick="showPlanetInfo('venus')">
+        <img src="venus-modified.png" alt="Venus">
+    </div>
+</div>
+
+<!-- Earth -->
+<div class="orbit earth">
+    <div class="planet" id="earth" onclick="showPlanetInfo('earth')">
+        <img src="earth-modified.png" alt="Earth">
+    </div>
+</div>
+
+<!-- Mars -->
+<div class="orbit mars">
+    <div class="planet" id="mars" onclick="showPlanetInfo('mars')">
+        <img src="mars-modified.png" alt="Mars">
+    </div>
+</div>
+
+<!-- Jupiter -->
+<div class="orbit jupiter">
+    <div class="planet" id="jupiter" onclick="showPlanetInfo('jupiter')">
+        <img src="jupiter-modified.png" alt="Jupiter">
+    </div>
+</div>
+
+<!-- Saturn -->
+<div class="orbit saturn">
+    <div class="planet" id="saturn" onclick="showPlanetInfo('saturn')">
+        <img src="saturn-modified.png" alt="Saturn">
+    </div>
+</div>
+
+<!-- Uranus -->
+<div class="orbit uranus">
+    <div class="planet" id="uranus" onclick="showPlanetInfo('uranus')">
+        <img src="uranus-modified.png" alt="Uranus">
+    </div>
+</div>
+
+<!-- Neptune -->
+<div class="orbit neptune">
+    <div class="planet" id="neptune" onclick="showPlanetInfo('neptune')">
+        <img src="neptune-modified.png" alt="Neptune">
+    </div>
+</div>
+</section>
+
+<!-- Planet Info Modal -->
+
+</section>
+
+<section id="info">
+ 
+  <h1 class="ss" style="text-align: center; color: #f9f9f9;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-bottom: 10px;text-shadow: 0 0 10px rgba(18, 189, 232, 0.875), 0 0 20px rgba(23, 89, 196, 0.6);font-size: 2.5em;">The Sun and The Planets</h1> <!-- Main heading -->
+  <div class="container">
+    
+    <div class="celestial-body sun" onclick="showInfo('sun')" >
+        <img src="sun2-modified1.png" alt="Sun">
+        <span class="planet-name">Sun</span>
+        <div class="info" id="sun-info"></div> <!-- Placeholder for Sun info -->
+    </div>
+    <div class="celestial-body mercury" onclick="showInfo('mercury')">
+        <img src="mercury1-modified1.png" alt="Mercury">
+        <span class="planet-name">Mercury</span>
+    </div>
+    <div class="celestial-body venus" onclick="showInfo('venus')">
+        <img src="venus-modified1.png" alt="Venus">
+        <span class="planet-name">Venus</span>
+    </div>
+    <div class="celestial-body earth" onclick="showInfo('earth')">
+        <img src="earth-modified1.png" alt="Earth">
+        <span class="planet-name">Earth</span>
+    </div>
+    <div class="celestial-body mars" onclick="showInfo('mars')">
+        <img src="mars-modified1.png" alt="Mars">
+        <span class="planet-name">Mars</span>
+    </div>
+    <div class="celestial-body jupiter" onclick="showInfo('jupiter')">
+        <img src="jupiter-modified1.png" alt="Jupiter">
+        <span class="planet-name">Jupiter</span>
+    </div>
+    <div class="celestial-body saturn" onclick="showInfo('saturn')">
+        <img src="saturn-modified1.png" alt="Saturn">
+        
+    </div>
+    <div class="celestial-body uranus" onclick="showInfo('uranus')">
+        <img src="uranus-modified1.png" alt="Uranus">
+        <span class="Uranus">Uranus</span>
+    </div>
+    <div class="celestial-body neptune" onclick="showInfo('neptune')">
+        <img src="neptune-modified1.png" alt="Neptune">
+        <span class="planet-name">Neptune</span>
+    </div>
+</div>
+<p style="text-align: center; color: #b7e2f8; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1em; margin-bottom: 1px;">
+  Click on any planet or the sun to learn more!
+</p>
+
+<!-- Section for weight calculation -->
+<div id="weight-section" style="text-align: center; margin-top: 50px;">
+<h3 style="text-align: center; color: #fff; margin-bottom: 10px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-shadow: 0 0 10px rgba(18, 189, 232, 0.875), 0 0 20px rgba(3, 16, 79, 0.6);font-size: 2em;">Cosmic Calculations: </h3>
+<h4 style="text-align: center; color: #fff; margin-bottom: 10px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-shadow: 0 0 10px rgba(18, 189, 232, 0.875), 0 0 20px rgba(3, 16, 79, 0.6);font-size: 1em;">Find Out How Much You'd Weigh Across the Solar System!</h4>
+
+
+<input type="number" id="earth-weight" placeholder="Weight on Earth (kg)" style="padding: 10px; border: 2px solid #f9f7f7; border-radius: 5px; width: 250px; margin-bottom: 10px;"/>
+  <select id="planet-select" style="padding: 10px; border: 2px solid #d7e3e6; border-radius: 5px; width: 260px; margin-bottom: 20px;">
+  <option value="mercury">Mercury</option>
+  <option value="venus">Venus</option>
+  <option value="earth">Earth</option>
+  <option value="mars">Mars</option>
+  <option value="jupiter">Jupiter</option>
+  <option value="saturn">Saturn</option>
+  <option value="uranus">Uranus</option>
+  <option value="neptune">Neptune</option>
+</select>
+<button class="bb" onclick="calculateWeight()">Calculate Weight</button>
+<div id="weight-result" style="margin-top: 10px; color: #090a09;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.3em;">
+  Your weight result will be displayed here.
+</div> <!-- Result will be displayed here -->
+</div>
+<div id="info-box" class="info-box">
+    <span class="close" onclick="closeInfo()">&times;</span>
+    <h2 id="info-title"></h2>
+    <p id="info-description"></p>
+</div>
+
+
+</section>
+
+
+<section id="explore">
+
+  <h1 style="font-size: 4rem;">LIVE MARS ROVER IMAGES</h1>
+  <table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Camera Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>2016-08-05</td><td>MAST</td></tr>
+        <tr><td>2015-10-01</td><td>CHEMCAM</td></tr>
+        <tr><td>2013-04-07</td><td>RHAZ</td></tr>
+        <tr><td>2014-10-21</td><td>NAVCAM</td></tr>
+        <tr><td>2015-01-14</td><td>PANCAM</td></tr>
+        <tr><td>2023-05-15</td><td>MAST</td></tr>
+        <tr><td>2023-06-10</td><td>CHEMCAM</td></tr>
+        <tr><td>2023-07-22</td><td>RHAZ</td></tr>
+        <tr><td>2023-08-18</td><td>NAVCAM</td></tr>
+        <tr><td>2023-01-30</td><td>PANCAM</td></tr>
+        <tr><td>2023-03-21</td><td>RHAZ</td></tr>
+        <tr><td>2023-04-25</td><td>NAVCAM</td></tr>
+        <tr><td>2013-05-23</td><td>RHAZ</td></tr>
+        <tr><td>2007-01-17</td><td>PANCAM</td></tr>
+        <tr><td>2005-10-26</td><td>FHAZ</td></tr>
+    </tbody>
+</table>
+
+<!-- Form for selecting date and camera -->
+<form id="imageryForm">
+    <label for="date">Select Date:</label>
+    <input class="cc" type="date" id="date" required />
+    <label for="camera">Select Camera:</label>
+    <select class="dd" id="camera" required>
+        <option value="MAST">MAST</option>
+        <option value="CHEMCAM">CHEMCAM</option>
+        <option value="RHAZ">RHAZ</option>
+        <option value="NAVCAM">NAVCAM</option>
+        <option value="PANCAM">PANCAM</option>
+    </select>
+    <button class="aa" type="submit" id="getImagesButton">Get Images</button>
+</form>
+
+<!-- Area to display images -->
+<div id="imageDisplay"></div>
+
+<!-- Modal for displaying images -->
+<div id="imageModal" class="modal1">
+    <span id="closeModal" class="close">&times;</span>
+    <div id="modalContent" class="modal-content">
+        <!-- Images will be injected here -->
+    </div>
+</div>
+
+</section>
+
+<section id="game">
+   <!-- Loader Page with Video -->
+   <div id="loader">
+    <video id="loaderVideo" autoplay muted>
+      <source src="gameloader.mp4" type="video/mp4"> <!-- Replace 'gameloader.mp4' with your actual video file -->
+    </video>
+  </div>
+
+ <!-- Phaser Game Script -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+
+</section>
+
+<script>
+  function calculateWeight() {
+      const earthWeight = parseFloat(document.getElementById("earth-weight").value);
+      const planet = document.getElementById("planet-select").value;
+
+      // Gravity on different planets relative to Earth
+      const gravity = {
+          mercury: 0.38,
+          venus: 0.91,
+          earth: 1.00,
+          mars: 0.38,
+          jupiter: 2.34,
+          saturn: 1.06,
+          uranus: 0.92,
+          neptune: 1.19,
+      };
+
+      if (!isNaN(earthWeight) && earthWeight > 0) {
+          const weightOnPlanet = (earthWeight * gravity[planet]).toFixed(2);
+          document.getElementById("weight-result").innerText = `Your weight on ${planet.charAt(0).toUpperCase() + planet.slice(1)} would be ${weightOnPlanet} kg.`;
+
+      } else {
+          document.getElementById("weight-result").innerText = 
+              'Please enter a valid weight on Earth.';
+      }
+  }
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+
+<script src="script.js"></script>
+<script src="script1.js"></script>
+<script src="script2.js"></script>
+
+</body>
+</html>

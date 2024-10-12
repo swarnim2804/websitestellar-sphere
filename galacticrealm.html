@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Realm</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image: url('nightsky1.jpg'); /* Path to your starry background */
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #backgroundVideo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Scale the video to cover the entire container */
+            z-index: -1; /* Send the video to the back */
+        }
+
+        h3 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(239, 5, 99, 0.822), 0 0 20px rgba(54, 2, 139, 0.902);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(255, 255, 255);
+        }
+
+        /* Increase the size of the galaxy map */
+        #galaxyMap {
+            position: relative;
+            width: 100%; /* Increased width */
+            height: 90vh; /* Increased height */
+            background-color:transparent; /* Darken background for better visibility */
+            border-radius: 20px; /* Rounded corners for aesthetic appeal */
+            overflow: visible; /* Hide overflow */
+            padding: 20px; /* Added padding for better appearance */
+            margin: 20px 0; /* Space around the galaxy map */
+        }
+
+        .galaxy {
+            position: absolute;
+            color: #ffffff;
+            background-color: rgba(84, 19, 137, 0.5);
+            cursor: pointer;
+            overflow: hidden;
+            transition: transform 0.3s;
+            animation: twinkle 1.5s infinite alternate; /* Add twinkling effect */
+            padding: 10px; /* Add padding to increase clickable area */
+            border-radius: 5px; /* Add a slight rounding for aesthetics */
+            z-index: 10; /
+        }
+
+        @keyframes twinkle {
+            0% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .galaxy:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+            text-shadow: 0 0 10px rgba(32, 7, 116, 0.7);
+        }
+
+        .details-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            justify-content: center;
+            align-items: center;
+            z-index:1000;
+        }
+
+        .modal-content {
+            background-color: #5677e2;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: rgb(236, 225, 9);
+            overflow: hidden;
+            max-width: 90%; /* Responsive modal width */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        }
+
+        /* Style for video section */
+        #videoSection {
+        background-color: rgba(176, 83, 212, 0.7); /* Semi-transparent background */
+   height: 100%;
+   width: 50%;
+        border-radius: 90px;
+        margin-top:11%; /* Space between galaxy map and video section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+        }
+
+    
+.origin{
+    position: absolute;
+    height: 70%;
+    width: 35%;
+}
+        /* Style for galaxy images */
+        .galaxy-image {
+        position: absolute;
+        transform: translate(-50%, -100%); /* Center the image above the galaxy */
+        opacity: 1; /* Full opacity for better visibility */
+        z-index: 2; /* Ensure the image appears above other elements */
+        width: 100px; }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="backgroundVideo" autoplay loop >
+        <source src="galaxyvid.mp4" type="video/mp4"> <!-- Replace with your video file -->
+        Your browser does not support the video tag.
+    </video>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="galaxysound.m4a" type="audio/mpeg"> <!-- Replace with your audio file -->
+        Your browser does not support the audio element.
+    </audio>
+    
+    <h3>Galactic Realm</h3>
+    <p style="font-size: 0.8em; margin-bottom: 20px;color: #f5f4f1; background-color: rgba(134, 3, 167, 0.7);">(Click on the galaxies to know more!)</p>
+
+    <div id="galaxyMap">
+        <div class="galaxy" data-name="Milky Way" style="left: 25%; top: 130%;">Milky Way</div>
+        <img src="mw-removebg-preview.png" alt="Milky Way" class="galaxy-image" style="left: 28%; top: 155%; width: 290px;"> <!-- Image for Milky Way -->
+
+        <div class="galaxy" data-name="Andromeda" style="left: 68%; top: 150%;">Andromeda</div>
+        <img src="andromeda-removebg-preview.png" alt="Andromeda" class="galaxy-image" style="left: 70%; top: 155%; width: 350px;"> <!-- Image for Andromeda -->
+
+        <div class="galaxy" data-name="Triangulum" style="left: 85%; top: 190%;">Triangulum</div>
+        <img src="triangulum-removebg-preview.png" alt="Triangulum" class="galaxy-image" style="left: 89%; top: 180%; width: 200px;"> <!-- Image for Triangulum -->
+
+        <div class="galaxy" data-name="Whirlpool" style="left: 5%; top: 190%;">Whirlpool</div>
+        <img src="whirl-removebg-preview.png" alt="Whirlpool" class="galaxy-image" style="left: 7%; top: 240%; width: 220px;"> <!-- Image for Whirlpool -->
+
+        <div class="galaxy" data-name="Sombrero" style="left: 45%; top: 100%;">Sombrero</div>
+        <img src="somb-removebg-preview.png" alt="Sombrero" class="galaxy-image" style="left: 49%; top: 130%; width: 350px;"> <!-- Image for Sombrero -->
+    </div>
+
+    <!-- Details Modal -->
+    <div class="details-modal" id="galaxyDetails">
+        <div class="modal-content">
+            <h2 id="galaxyName"></h2>
+            <p id="galaxyInfo"></p>
+            <span class="close" id="closeGalaxyDetails">Close</span>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div id="videoSection">
+        <h3>Our Origin</h3>
+        <video class="origin" controls autoplay  loop>
+            <source src="Our Story in 1 Minute.mp4" type="video/mp4"> <!-- Replace with your video file -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        // Galaxy details data
+        const galaxyData = {
+            "Milky Way": "The Milky Way is the galaxy that contains our solar system, consisting of billions of stars, gas, and dust.",
+            "Andromeda": "Andromeda is the nearest spiral galaxy to the Milky Way, located about 2.537 million light-years away.",
+            "Triangulum": "The Triangulum Galaxy is a spiral galaxy approximately 3 million light-years from Earth, part of our Local Group.",
+            "Whirlpool": "The Whirlpool Galaxy is a classic spiral galaxy known for its well-defined spiral arms and is located about 23 million light-years away.",
+            "Sombrero": "The Sombrero Galaxy is known for its bright nucleus and prominent dust lane, located around 28 million light-years away."
+        };
+
+        // Function to show galaxy details
+        function showGalaxyDetails(galaxy) {
+            const galaxyDetails = document.getElementById('galaxyDetails');
+            const galaxyName = document.getElementById('galaxyName');
+            const galaxyInfo = document.getElementById('galaxyInfo');
+
+            galaxyName.textContent = galaxy;
+            galaxyInfo.textContent = galaxyData[galaxy] || "Details not available.";
+            galaxyDetails.style.display = 'flex'; // Show the details modal
+        }
+
+        // Add click events to galaxy elements
+        document.querySelectorAll('.galaxy').forEach(galaxy => {
+            galaxy.addEventListener('click', function() {
+                showGalaxyDetails(this.dataset.name);
+            });
+        });
+
+        // Close modal event
+        document.getElementById('closeGalaxyDetails').addEventListener('click', function() {
+            document.getElementById('galaxyDetails').style.display = 'none'; // Hide the modal
+        });
+
+        // Scroll down to the video section when the page loads
+        window.onload = function() {
+            document.getElementById('videoSection').scrollIntoView({ behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,1858 @@
+body {
+  margin: 0;
+ padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: black;
+  cursor: url('cursorResize.png') 16 16, auto; 
+}
+
+#nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  z-index: 10000;
+}
+
+#menu a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+#nav img {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+
+#menu {
+  gap: 50px;
+  width: 100%;
+  display: flex;
+  padding-left: 80px;
+}
+
+#nav a:hover {
+  color: red;
+  transition: 0.75s;
+  text-shadow: 5px 5px 5px blue, 10px 10px 13px red;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+#mystery {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+#scene {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+
+#mysteryButton1 {
+  top: 40%;
+  left: 40%;
+}
+
+#mysteryButton2 {
+  top: 50%;
+  left: 40%;
+}
+.show {
+  opacity: 1; 
+}
+#timeline{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#solar-system {
+  background-color: brown;
+  height: 100vh;
+  width: 100%;
+}
+#info{
+  height: 100vh;
+  width: 100%;
+}
+#button1section{
+  height: 100vh;
+  width: 100%;
+  background-image: url('alien.jpg');
+  background-size: contain; /* Make sure the entire image is visible */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-position: center;
+}
+#button1section img{
+ object-fit: cover;
+}
+#button2section {
+  background-color: black; 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  position: relative;
+}
+
+
+#starfield {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Keep the starfield behind the Lottie animations */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#player1 {
+  position: absolute;
+  z-index: 2; /* Ensure Lottie animations are above the starfield */
+  left: calc(50% - 300px); 
+}
+#player2 {
+  position: absolute;
+  z-index: 2; /* Ensure Lottie animations are above the starfield */
+  left: calc(50% + 0px);
+}
+#redBox {
+  width: 320px; /* Set width to 200px */
+  height: 300px; /* Set height to 200px */
+  background-color: none; /* Set background color to red */
+  position: absolute; /* Position it absolutely within the starfield */
+  top: 35%; /* Center vertically */
+  left: 15%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset to perfectly center */
+  z-index: 3; /* Ensure it is above the starfield and animations */
+}
+#redBox p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #00ffcc; /* Bright cyan color for text */
+    font-size: large; /* Adjust size as needed */
+    text-shadow: 
+        0 0 5px #00ffcc, /* Outer glow */
+        0 0 10px #00ffcc, /* Outer glow */
+        0 0 15px #ff00ff, /* Pink outer glow */
+        0 0 20px #ff00ff, /* Pink outer glow */
+        0 0 30px #ff00ff; /* Pink outer glow */
+  text-transform: uppercase;
+}
+
+#blue{
+  width: 400px; /* Set width to 200px */
+  height: 200px; /* Set height to 200px */
+  background-color: none; /* Set background color to red */
+  position: absolute; /* Position it absolutely within the starfield */
+  top: 60%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset to perfectly center */
+  z-index: 3; /* Ensure it is above the starfield and animations */
+  display: flex;
+  text-align: center;
+}
+#green {
+  width: 320px; /* Set width to 200px */
+  height: 300px; /* Set height to 200px */
+  background-color: none; /* Set background color to red */
+  position: absolute; /* Position it absolutely within the starfield */
+  top: 35%; /* Center vertically */
+  right: -5%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset to perfectly center */
+  z-index: 3; /* Ensure it is above the starfield and animations */
+  
+}
+#green p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #00ffcc; /* Bright cyan color for text */
+    font-size: large; /* Adjust size as needed */
+    text-shadow: 
+        0 0 5px #00ffcc, /* Outer glow */
+        0 0 10px #00ffcc, /* Outer glow */
+        0 0 15px #ff00ff, /* Pink outer glow */
+        0 0 20px #ff00ff, /* Pink outer glow */
+        0 0 30px #ff00ff; /* Pink outer glow */
+  text-transform: uppercase;
+}
+#blue h1{
+  color: #fff; /* Base text color */
+    text-shadow: 
+        0 0 5px #fff, 
+        0 0 10px #fff, 
+        0 0 20px #ff0400, /* Pink glow */
+        0 0 30px #ff0400, 
+        0 0 40px #ff0400, 
+        0 0 50px #ff0400, 
+        0 0 75px #ff0400; /* Outer glow */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 3rem;
+    animation: flicker 1.5s infinite alternate;
+}
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% {opacity:1;}
+}
+#img{
+  width: 350px; /* Set width to 200px */
+  height: 200px; /* Set height to 200px */
+  background-image: url("universe.jpg"); /* Set background color to red */
+  position: absolute; /* Position it absolutely within the starfield */
+  bottom: 5%; /* Center vertically */
+  right: 5%; /* Center horizontally */
+  z-index: 3;
+  background-size: cover;
+  border-radius: 10px;
+  border: 2px solid red;
+}
+#img1{
+  width: 350px; /* Set width to 200px */
+  height: 200px; /* Set height to 200px */
+  background-image: url("universe1.jpg"); /* Set background color to red */
+  position: absolute; /* Position it absolutely within the starfield */
+  bottom: 5%; /* Center vertically */
+  left: 5%; /* Center horizontally */
+  
+  z-index: 3;
+  background-size: cover;
+  border-radius: 10px;
+  border: 2px solid red;
+}
+#video{
+  width: 300px; /* Set width to 200px */
+  height: 300px; /* Set height to 200px */
+  position: absolute; 
+  bottom: -15%; 
+  right: -3%; 
+  transform: translate(-50%, -50%); 
+  z-index: 3;
+  background-size: cover;
+  border-radius: 10px;
+  border: 3px solid #00B140;
+}
+video{
+  width: 100%; /* Make video responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove inline spacing */
+  border-radius: 8px;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+#text{
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  right: -10%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  background-color: none;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#text h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
+  color: black;
+  text-shadow: 0 0 10px #00B140, 0 0 20px #00B140, 0 0 30px #00B140, 0 0 40px #66FF66; /* Adjusted shades of Neo Green */
+  animation: shine 2s infinite alternate;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+#text h1:hover {
+  color: black;
+  text-shadow: 0 0 20px #00B140, 0 0 30px #66FF66, 0 0 40px #99FF99, 0 0 50px #CCFFCC; /* Lighter shades of Neo Green */
+  transform: scale(1.1);
+}
+
+@keyframes shine {
+  0% {
+      text-shadow: 0 0 10px #00B140, 0 0 20px #00B140, 0 0 30px #00B140, 0 0 40px #66FF66; /* Initial Neo Green */
+  }
+  100% {
+      text-shadow: 0 0 20px #00B140, 0 0 30px #66FF66, 0 0 40px #99FF99, 0 0 50px #CCFFCC; /* Final Neo Green */
+  }
+}
+
+#para1{
+  height:60%;
+  width: 55%;
+  position: absolute;
+  color: white;
+  overflow: hidden;
+  left: 10%;
+  bottom: 5%;
+}
+#para2{
+  position: absolute; /* Position absolutely within the container */
+    animation: scroll 40s linear infinite;
+    line-height: 1.5;
+    left: 5%;
+    object-fit: fill;
+    
+}
+#para2 p{
+  color: red;
+}
+#para2:hover{
+  animation-play-state: paused;
+}
+#para1 p{
+  font-size: 18px;
+  font-family: "Sixtyfour Convergence", sans-serif;
+}
+@keyframes scroll {
+  0% {
+      transform: translateY(20%); /* Start from below the container */
+  }
+  100% {
+      transform: translateY(-100%); /* Move to above the container */
+  }
+}
+#mysteryButton1,#mysteryButton2 {
+  background-color: black; /* Black background */
+  color: #00ffcc; /* Neon cyan text color */
+  font-size: 1.5em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px; /* Rounded corners */
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ccff, 0 0 40px #0099ff; /* Initial neon glow */
+  z-index: 10;
+}
+
+/* Moving hover effect */
+#mysteryButton1::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(0, 255, 204, 0.5), transparent);
+  transform: rotate(45deg);
+  transition: all 0.4s ease;
+}
+#mysteryButton2::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(0, 255, 204, 0.5), transparent);
+  transform: rotate(45deg);
+  transition: all 0.4s ease;
+}
+
+/* Glowing hover effect */
+#mysteryButton1:hover {
+  color: #ff00cc; /* Change text to neon pink */
+  box-shadow: 0 0 30px #ff33ff, 0 0 40px #ff00ff, 0 0 50px #ff00cc, 0 0 60px #ff00cc; /* Stronger neon glow */
+  transform: scale(1.1); /* Slight scale on hover */
+}
+#mysteryButton2:hover {
+  color: #ff00cc; /* Change text to neon pink */
+  box-shadow: 0 0 30px #ff33ff, 0 0 40px #ff00ff, 0 0 50px #ff00cc, 0 0 60px #ff00cc; /* Stronger neon glow */
+  transform: scale(1.1); /* Slight scale on hover */
+}
+
+/* Moving glow animation on hover */
+#mysteryButton1:hover::before {
+  top: -40%;
+  left: -50%;
+  background: linear-gradient(45deg, transparent, rgba(255, 0, 204, 0.5), transparent);
+}
+#mysteryButton2:hover::before {
+  top: -40%;
+  left: -50%;
+  background: linear-gradient(45deg, transparent, rgba(255, 0, 204, 0.5), transparent);
+}
+/* Add focus effect */
+#mysteryButton1:focus {
+  outline: none;
+  box-shadow: 0 0 40px #00ffcc, 0 0 60px #00ccff, 0 0 80px #0099ff; /* Brighter focus effect */
+}
+#mysteryButton2:focus {
+  outline: none;
+  box-shadow: 0 0 40px #00ffcc, 0 0 60px #00ccff, 0 0 80px #0099ff; /* Brighter focus effect */
+}
+.video-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire area */
+  z-index: 0; /* Ensure it's behind the 3D scene */
+  opacity: 0.3;
+}
+#clock{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+#present{
+  height: 100vh;
+  width: 100%;
+  background-color: #66FF66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("presentbg.jpg");
+  background-size: cover;
+  position: relative;
+}
+#future{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url("tt2.jpg");
+  background-size: cover;
+}
+#past1{
+  height: 100vh;
+  width: 100%;
+  background-image: url("moon.jpg");
+  position: relative;
+  background-size: cover;
+}
+#present1{
+  height: 100vh;
+  width: 100%;
+  background-color: #ff0400;
+  position: relative;
+  background-image: url("t.jpg");
+  background-size: cover;
+}
+#future1{
+  height: 100vh;
+  width: 100%;
+  background-color: gold;
+  position: relative;
+  background-image: url("travelbg.jpg");
+  background-size: cover;
+}
+#button1,#button2,#button3{
+  z-index: 5;
+  position: absolute;
+}
+#button2-past{
+  height: 30px;
+  width: 70px;
+  bottom: 5%;
+  right: 10%;
+  position: absolute;
+}
+#button3-past{
+  height: 30px;
+  width: 70px;
+  bottom: 5%;
+  right: 5%;
+  position: absolute;
+
+}
+.clock-background{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire area */
+  z-index: 0; /* Ensure it's behind the 3D scene */
+  opacity: 0.5;
+}
+#button2{
+  background-image: url('button1.jpg'); /* Path to your image */
+  background-size: cover; /* Adjust size to cover button */
+  background-repeat: no-repeat; /* Don't repeat the image */
+  border: 2px solid red;/* Optional: Remove border */
+  width: 150px; /* Set button width */
+  height: 150px; /* Set button height */
+  color: white; /* Text color */
+   /* Font size */
+  cursor: pointer; /* Change cursor on hover */
+  object-fit: cover;
+  border-radius: 75px;
+  z-index: 5;
+  position: absolute;
+ right: 45%;
+}
+#button1{
+  background-image: url('button3.jpg'); /* Path to your image */
+  background-size: cover; /* Adjust size to cover button */
+  background-repeat: no-repeat; /* Don't repeat the image */
+  border: 2px solid red;/* Optional: Remove border */
+  width: 150px; /* Set button width */
+  height: 150px; /* Set button height */
+  color: white; /* Text color */
+   /* Font size */
+  cursor: pointer; /* Change cursor on hover */
+  object-fit: cover;
+  border-radius: 75px;
+  z-index: 5;
+  position: absolute;
+  left: 10%;
+}
+#button3{
+  background-image: url('button2.jpg'); /* Path to your image */
+  background-size: cover; /* Adjust size to cover button */
+  background-repeat: no-repeat; /* Don't repeat the image */
+  border: 2px solid red;/* Optional: Remove border */
+  width: 150px; /* Set button width */
+  height: 150px; /* Set button height */
+  color: white; /* Text color */
+   /* Font size */
+  cursor: pointer; /* Change cursor on hover */
+  object-fit: cover;
+  border-radius: 75px;
+  z-index: 5;
+  position: absolute;
+  right: 10%;
+
+}
+#game{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#past{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("old-paper1.jpg");
+  background-size: cover;
+
+}
+#div1{
+  height: 100%;
+  width: 69%;
+  float: left;
+}
+
+#yuri{
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#yuri h1{
+  font-size: 2rem;
+  color: #000;
+
+}
+#yuri1{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+#yuri-img{
+  
+  height: 70%;
+  width: 25%;
+  float: left;
+  background-image: url("yuri.jpg");
+  background-size: cover;
+}
+#pyuri1{
+  height: 80%;
+  width: 50%;
+  float: right;
+  
+}
+#pyuri1 p{
+  font-weight: 700;
+  font-size: 1rem;
+  color: black;
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  text-shadow: #00ccff;
+}
+#yuri2{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+#yuri-img1{
+  height: 70%;
+  width: 25%;
+  float: right;
+  background-image: url("yuri1.jpeg");
+  background-size: cover;
+}
+#pyuri2{
+  height: 80%;
+  width: 50%;
+  float: left;
+}
+#pyuri2 p{
+  font-weight: 700;
+   font-size: 1rem;
+   color: black;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+   
+}
+#div2{
+  height: 100%;
+  width: 30%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#past-video{
+  width: 90%;
+  height: 50%;
+}
+#div3{
+  height: 100%;
+  width: 72%;
+  float: left;
+}
+
+#neil{
+  width: 100%;
+  height: 10%;
+ background-color: gray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#neil1{
+  width: 100%;
+  height: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+#neil2{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+#neil3{
+  width: 100%;
+  height: 30%;
+ 
+}
+#neil h1{
+  font-size: 2rem;
+  color: black;
+  background-color: gray;
+}
+#neil-img{
+  width: 30%;
+  height: 80%;
+  float: left;
+  background-image: url("neil-img.jpg");
+background-size: cover;
+}
+#pneil1{
+  width: 55%;
+  height: 100%;
+  
+  float: right;
+}
+#pneil2{
+  height: 100%;
+  width: 55%;
+
+}
+#neil-img1{
+  height: 80%;
+  width: 30%;
+  background-image: url("neil-img1.jpg");
+background-size: cover;
+}
+#pneil3{
+  height: 100%;
+  width: 55%;
+  float: right;
+}
+#pneil1 p{
+  color: black;
+  font-size: 1rem;
+   text-shadow: #00ccff;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+}
+#pneil2 p{
+  color: black;
+  font-size: 1rempx;
+   text-shadow: #00ccff;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+}
+#pneil3 p{
+  color: black;
+  font-size: 1rem;
+   text-shadow: #00ccff;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+}
+#div4{
+  height: 100%;
+  width: 27%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#neil-video{
+  height: 50%;
+  width: 100%;
+  
+}
+.a{
+  height: auto;
+  width: auto;
+}
+
+
+
+
+#div5{
+  height: 100%;
+  width: 72%;
+  float: left;
+}
+
+#iss{
+  width: 100%;
+  height: 10%;
+ 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+}
+#iss1{
+  width: 100%;
+  height: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+#iss2{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+#iss3{
+  width: 100%;
+  height: 30%;
+ 
+}
+#iss h1{
+  font-size: 2rem;
+  color: black;
+ 
+}
+#iss-img{
+  width: 30%;
+  height: 80%;
+  float: left;
+  background-image: url("iss1.jpg");
+  background-size: cover;
+}
+#piss1{
+  width: 55%;
+  height: 100%;
+  
+  float: right;
+}
+#piss2{
+  height: 100%;
+  width: 55%;
+
+}
+#iss-img1{
+  height: 80%;
+  width: 30%;
+  background-image: url("iss2.webp");
+background-size: cover;
+}
+#piss3{
+  height: 100%;
+  width: 55%;
+  float: right;
+}
+#piss1 p{
+  color: white;
+  font-size: 1rem;
+   text-shadow: #00ccff;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+   background-color: gray;
+}
+#piss2 p{
+  color: white;
+  font-size: 1rempx;
+   text-shadow: #00ccff;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+   background-color: gray;
+}
+#piss3 p{
+  color:white;
+  font-size: 1rem;
+   text-shadow: #00ccff;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+   background-color: gray;
+}
+#div6{
+  height: 100%;
+  width: 27%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#iss-video{
+  height: 50%;
+  width: 100%;
+  
+}
+
+#div7{
+  height: 100%;
+  width: 69%;
+  float: left;
+}
+
+#yaan{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+#yaan h1{
+  font-size: 2rem;
+  color: #000;
+}
+#yaan1{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+#yaan-img{
+  
+  height: 70%;
+  width: 25%;
+  float: left;
+  background-image: url("spacetour.jpg");
+  background-size: cover;
+}
+#pyaan1{
+  height: 80%;
+  width: 50%;
+  float: right;
+ 
+  
+}
+#pyaan1 p{
+  font-weight: 700;
+  font-size: 1rem;
+  color: black;
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  text-shadow: #00ccff;
+
+  
+}
+#yaan2{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+#yaan-img1{
+  height: 70%;
+  width: 25%;
+  float: right;
+  background-image: url("tour2.jpg");
+  background-size: cover;
+  }
+
+#pyaan2{
+  height: 80%;
+  width: 50%;
+  float: left;
+}
+#pyaan2 p{
+  font-weight: 700;
+   font-size: 1rem;
+   color: black;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+   
+}
+#div8{
+  height: 100%;
+  width: 30%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#yaan-video{
+  width: 90%;
+  height: 50%;
+}
+
+#div9{
+  height: 100%;
+  width: 72%;
+  float: left;
+}
+
+#mars{
+  width: 100%;
+  height: 10%;
+ background-color: gray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#mars1{
+  width: 100%;
+  height: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+#mars2{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+#mars3{
+  width: 100%;
+  height: 30%;
+ 
+}
+#mars h1{
+  font-size: 2rem;
+  color: black;
+}
+#mars-img{
+  width: 30%;
+  height: 80%;
+  float: left;
+  background-image: url("mars1.jpg");
+  background-size: cover;
+}
+#pmars1{
+  width: 55%;
+  height: 100%;
+  
+  float: right;
+}
+#pmars2{
+  height: 100%;
+  width: 55%;
+
+}
+#mars-img1{
+  height: 80%;
+  width: 30%;
+  background-image: url("mars2.jpg");
+  background-size: cover;
+}
+#pmars3{
+  height: 100%;
+  width: 55%;
+  float: right;
+}
+#pmars1 p{
+  color: white;
+  font-size: 1rem;
+   text-shadow: #00ccff;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+}
+#pmars2 p{
+  color: white;
+  font-size: 1rempx;
+   text-shadow: #00ccff;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+}
+#pmars3 p{
+  color: white;
+  font-size: 1rem;
+   text-shadow: #00ccff;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+}
+#div10{
+  height: 100%;
+  width: 27%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#mars-video{
+  height: 50%;
+  width: 100%;
+  
+}
+#div11{
+  height: 100%;
+  width: 72%;
+  float: left;
+}
+
+#travel{
+  width: 100%;
+  height: 10%;
+ background-color: gray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#travel1{
+  width: 100%;
+  height: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+#travel2{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+#travel3{
+  width: 100%;
+  height: 30%;
+ 
+}
+#travel h1{
+  font-size: 2rem;
+  color: black;
+}
+#travel-img{
+  width: 30%;
+  height: 80%;
+  float: left;
+  background-image: url("tt1.jpg");
+background-size: cover;
+}
+#ptravel1{
+  width: 55%;
+  height: 100%;
+  
+  float: right;
+}
+#ptravel2{
+  height: 100%;
+  width: 55%;
+
+}
+#travel-img1{
+  height: 80%;
+  width: 30%;
+  background-image: url("tt3.jpg");
+background-size: cover;
+}
+#ptravel3{
+  height: 100%;
+  width: 55%;
+  float: right;
+}
+#ptravel1 p{
+  color: white;
+  font-size: 1rem;
+   text-shadow: #00ccff;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+}
+#ptravel2 p{
+  color: white;
+  font-size: 1rempx;
+   text-shadow: #00ccff;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+}
+#ptravel3 p{
+  color: white;
+  font-size: 1rem;
+   text-shadow: #00ccff;
+   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+}
+#div12{
+  height: 100%;
+  width: 27%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#travel-video{
+  height: 50%;
+  width: 100%;
+  
+}
+    
+    #explore{
+      height: 150vh;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: #fff;
+      margin: 0;
+      padding: 35px;
+    }
+  .modal1 {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1000; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+      margin: 15% auto; /* 15% from the top and centered */
+      display: flex; /* Use flex to arrange images */
+      flex-wrap: wrap; /* Allow wrapping */
+      justify-content: center; /* Center the content */
+  }
+  
+  .modal-content img {
+      max-width: 80%; /* Limit image size */
+      margin: 10px; /* Spacing between images */
+      border: 2px solid #fff; /* Add border */
+      border-radius: 5px; /* Rounded corners */
+  }
+  
+  .close {
+      color: #fff; /* Close button color */
+      float: right; /* Position it */
+      font-size: 28px; /* Font size */
+      font-weight: bold; /* Font weight */
+      margin: 20px; /* Margin */
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: #ccc; /* Change color on hover */
+      text-decoration: none; /* No underline */
+      cursor: pointer; /* Pointer cursor */
+  }
+  
+  h1 {
+      text-align: center;
+      color: #ffcc00;
+  }
+  
+  h2 {
+      margin-top: 20px;
+      text-align: center;
+  }
+  
+  table {
+      width: 60%; /* Make the table width smaller */
+      margin: 20px auto; /* Center the table */
+      border-collapse: collapse;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+      padding: 6px; /* Reduced padding */
+      text-align: center;
+      border: 1px solid #fff;
+  }
+  
+  th {
+      background-color: #ffcc00;
+  }
+  
+  tr:nth-child(even) {
+      background-color: #444;
+  }
+  
+  tr:hover {
+      background-color: #555;
+  }
+  
+  form {
+      text-align: center;
+      margin-top: 20px;
+  }
+  
+  .aa,.cc,.dd {
+      padding: 10px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px; /* Increased font size for better readability */
+      outline: none; /* Remove outline */
+      transition: box-shadow 0.3s, background-color 0.3s; /* Added transition for background color */
+  }
+  
+  /* Neon glow effect for input and select boxes */
+  input:focus, select:focus {
+      box-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+  }
+  
+  .cc {
+      background-color: #444; /* Dark background for inputs */
+      color: #fff; /* White text color */
+  }
+  
+  .dd{
+      background-color: #444; /* Dark background for selects */
+      color: #fff; /* White text color */
+  }
+  
+  .cc:hover, .dd:hover {
+      box-shadow: 0 0 8px #ffcc00, 0 0 15px #ffcc00;
+  }
+  
+  .aa {
+      background-color: #ffcc00;
+      color: #282c34;
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .aa:hover {
+      background-color: #ffd700;
+      box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+  }
+  
+  #imageDisplay {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+      max-width: 1000px; /* Set a max width */
+      margin: auto; /* Center the container */
+  }
+  
+  #imageDisplay img {
+      max-width: 200px; /* Allow the image to scale properly */
+      max-height: 200px; /* Set a max height to avoid distortion */
+      margin: 10px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      object-fit: cover; /* This property helps maintain the aspect ratio */
+      transition: transform 0.3s;
+  }
+  
+  #imageDisplay img:hover {
+      transform: scale(1.1);
+  }
+
+
+
+
+  
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+}
+
+.spaceship {
+    width: 200px; /* Adjust width */
+    position: absolute;
+    z-index: 0;
+    animation: moveLeftToCenter 2.5s ease-in-out forwards; /* Animation to move from left to center */
+}
+
+/* Keyframes for moving the spaceship from left to right, then stopping in the center */
+@keyframes moveLeftToCenter {
+    0% {
+        left: -100%; /* Start off the screen from the left */
+        top: 20%; /* Vertically centered */
+        transform: translateY(-50%);
+    }
+    50% {
+        left: 100%; /* Move across the screen to the right */
+        top: 50%;
+        transform: translateY(-60%);
+    }
+    100% {
+        left: 39%; /* Come back to the center */
+        top: 50%; 
+        transform: translate(-50%, -50%);
+    }
+}
+
+.input-container {
+    margin-top: 300px;
+    z-index: 100;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #33f407;
+    color: rgb(13, 13, 13);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+}
+
+#startJourney{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #33f407;
+    color: rgb(10, 10, 10);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+
+#startJourney:hover {
+    background-color: #640514;
+}
+
+.journey-container {
+    margin-top: 20px;
+    z-index: 10;
+}
+
+.hidden {
+    display: none;
+}
+
+#startJourney {
+    background-color: #33f407;
+    margin-top: 250px;
+    z-index: 10;
+    position: relative;
+}
+
+#startJourney:hover {
+    background-color: #6c93ec;
+    pointer-events: auto;
+}
+
+.top {
+    font-size: 2.3em; /* Adjust size as needed */
+  position: absolute;
+  top: 15%;
+    text-shadow: 0 0 10px rgba(18, 20, 16, 0.5), 0 0 20px rgba(1, 4, 33, 0.7); /* Glowing effect */
+    color: #00481b;
+    background-color:rgba(117, 229, 139, 0.5);
+    border-radius: 30%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    animation: colorChange 4s infinite; /* Color-changing animation */
+    
+}
+
+/* Keyframes for color change */
+@keyframes colorChange {
+    0% { color: #05ee0c; }
+    25% { color: #020801; }
+    50% { color: #05ee0c; }
+    75% { color: #020801; }
+    100% { color: #05ee0c; }
+}
+/* Add this at the end of your existing CSS */
+
+.spaceship {
+    width: 200px; /* Adjust width */
+    position: absolute;
+    z-index: 0;
+    transition: transform 3s ease-in; /* Smooth transition for zoom effect */
+}
+
+.zoom-out {
+    transform: scale(2); /* Zoom in effect */
+    opacity: 0; /* Fade out */
+}
+
+/* Hide the UFO initially after the button is clicked */
+.hidden {
+    display: none;
+}
+
+#optionsContainer {
+    margin-top: 50px; /* Adjust space from the top */
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+    transform: scale(0);
+    opacity: 0;
+    z-index: 1;
+}
+
+.zoom-in {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background-image: url(os1.jpg); /* Background image */
+    background-size: cover;
+}
+
+.spaceship {
+    width: 200px; /* Adjust width */
+    position: absolute;
+    z-index: 0;
+}
+
+.journey-container {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#optionsContainer {
+    margin-top: 50px; /* Adjust space from the top */
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+    transform: scale(0);
+    opacity: 0;
+    z-index: 1;
+}
+
+.zoom-in {
+    transform: scale(1);
+    opacity: 1;
+}
+.hidden {
+    display: none;
+}
+.button-image {
+    
+    cursor: pointer;
+    width: 350px; /* Adjust the size of the images */
+    height: 350px;
+    margin: 10px;
+    transition: transform 0.2s; /* Add some transition effect */
+}
+
+.button-image:hover {
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+
+}
+.transition-buttons h2 {
+    font-size: 2.2em; /* Adjust the size as needed */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.996), 0 0 20px rgba(0, 0, 0, 0.7); /* Glowing effect */
+    color: #200462;
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(206, 136, 166, 0.5);
+    
+}
+/* Add this at the end of your existing CSS */
+
+/* Fade transition for the container */
+.fade-out {
+    opacity: 0; /* Make the container invisible */
+    transition: opacity 1s ease; /* Smooth transition for fading out */
+}
+
+/* Fade in effect */
+.fade-in {
+    opacity: 1; /* Make the container visible */
+    transition: opacity 1s ease; /* Smooth transition for fading in */
+}
+
+/* Ensure the initial state of the container is visible */
+.container {
+    opacity: 1; /* Start fully visible */
+}
+.zoom-out {
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease; /* Duration of zoom out */
+}
+
+.zoom-in {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease; /* Duration of zoom in */
+}
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: #040404;
+    z-index: 999; /* Ensure it's above everything else */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above everything else */
+}
+
+.modal-content {
+  background-color: #390354; /* Darker background for the modal */
+  color: #ecf0f1; /* Light text color for better contrast */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect for depth */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.modal-content button {
+  background-color: #e18edd; /* Button background color */
+  color: #ffffff; /* Button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px; /* Space between buttons */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.modal-content button:hover {
+  background-color: #db0e89; /* Darker shade on hover */
+}
+
+
+
+#loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  z-index: 10;
+}
+
+
+
+/* Hide the game container until loader disappears */
+#game {
+  display: none;
+}
+
+/* Style for fade-out animation */
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Make video cover the loader screen */
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ensure the game covers the entire screen */
+
+#game {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+
+
+
+.fire-particle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, rgba(255,165,0,1) 0%, rgba(255,69,0,0.7) 50%, rgba(255,69,0,0) 100%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fade 1s forwards ease-out;
+  z-index: 10000;
+}
+
+@keyframes fade {
+  0% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(0.5) translateY(-50px);
+      opacity: 0;
+ }
+}
+
+
+
+
+
+/* Base style for the button */
+#button1-next,#button2-next,#button3-next {
+  background-color: #111; /* Dark background to make the neon pop */
+  color: #fff; /* White text */
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 0 20px rgba(255, 20, 147, 0.5); /* Initial soft pink glow */
+  outline: none;
+}
+
+/* Hover effect to intensify glow and add scaling */
+#button1-next:hover ,#button2-next:hover,#button3-next:hover{
+  color: #ff1493; /* Neon pink color for text on hover */
+  box-shadow: 0 0 30px rgba(255, 20, 147, 0.7),
+              0 0 60px rgba(255, 20, 147, 0.5),
+              0 0 90px rgba(255, 20, 147, 0.3);
+  transform: scale(1.1); /* Slight scaling on hover */
+}
+
+/* Active state (when button is pressed) */
+#button1-next:active,#button2-next:active,#button3-next:active {
+  transform: scale(0.98); /* Slight shrink on click */
+  box-shadow: 0 0 10px rgba(255, 20, 147, 0.5); /* Subtle glow while clicking */
+}
+
+/* Additional neon outline effect */
+#button1-next::before,#button2-next::before,#button3-next::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 20, 147, 0.5);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+#button1-next:hover::before,#button2-next:hover::before,#button3+-next:hover::before {
+  opacity: 1;
+  box-shadow: 0 0 30px rgba(255, 20, 147, 0.7),
+              0 0 60px rgba(255, 20, 147, 0.5),
+              0 0 90px rgba(255, 20, 147, 0.3);
+}
+/* code for button1 (past vala) */
+
+
+#button2-past,#button3-past,#button1-present,#button3-present,#button1-future,#button2-future{
+  background-color: #111; /* Dark background to make the neon pop */
+  color: #fff; /* White text */
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 0 20px rgba(255, 20, 147, 0.5); /* Initial soft pink glow */
+  position:absolute;
+  width: auto;
+  height: auto;
+}
+#button1-next{
+bottom: 10%;
+position: absolute;
+}
+#button2-next{
+  bottom: 10%;
+  position: absolute;
+  }
+  #button3-next{
+    bottom: 10%;
+    position: absolute;
+    }
+#button2-past{
+  bottom: 15%;
+}
+#button3-past{
+  right: 11%;
+}
+#button1-present{
+  bottom: 15%;
+}
+#button3-present{
+  bottom: 7%;
+}
+#button1-future{
+  bottom: 7%;
+}
+#button2-future{
+  bottom: 15%;
+}
+#button2-past:hover,#button3-past:hover,#button1-present:hover,#button3-present:hover,#button1-future:hover,#button2-future:hover{
+  color: #ff1493; /* Neon pink color for text on hover */
+  box-shadow: 0 0 30px rgba(255, 20, 147, 0.7),
+              0 0 60px rgba(255, 20, 147, 0.5),
+              0 0 90px rgba(255, 20, 147, 0.3);
+  transform: scale(1.1); /* Slight scaling on hover */
+}
+#button1-present:active,#button2-past:active,#button3-past:active,#button3-present:active,#button1-future:active,#button2-future:active{
+  transform: scale(0.98); /* Slight shrink on click */
+  box-shadow: 0 0 10px rgba(255, 20, 147, 0.5); /* Subtle glow while clicking */
+}
+
+#button1-present::before,#button2-past::before,#button3-past::before,#button3-present::before,#button1-future::before,#button2-future::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 20, 147, 0.5);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+#button1-future:hover::before,#button2-future:hover::before,#button3-present:hover::before,#button1-present:hover::before,#button2-past:hover::before,#button3-past:hover::before {
+  opacity: 1;
+  box-shadow: 0 0 30px rgba(255, 20, 147, 0.7),
+              0 0 60px rgba(255, 20, 147, 0.5),
+              0 0 90px rgba(255, 20, 147, 0.3);
+}
