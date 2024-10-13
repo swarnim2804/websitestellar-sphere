@@ -61,12 +61,14 @@
   }
   #pneil1 p{
     font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
+
   }
   #pneil2 p{
     font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
+
   }
   #pneil3 p{
-    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
+    font-size: clamp(0.75rem, 0.145rem + 0.941vw, 0.7rem);
   }
   #iss h1{
     font-size: clamp(1.5rem, -0.108rem + 2.51vw, 1.9rem);
