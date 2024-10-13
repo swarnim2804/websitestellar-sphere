@@ -1,325 +1,355 @@
 @media  (min-width:1025px) and (max-width: 1280px){
  
-#blue h1{
-  font-size: 2.8rem;
-}
-#img{
-  width: 330px;
-  height: 180px;
-}
-#img1{
-  width: 330px;
-  height: 180px;
-}
-#video{
-  width: 280px;
-  height: 280px;
-}
-#text{
-  width: 380px;
-  height: 90px;
-}
-#text-h1{
-  font-size: 2.8rem;
-}
-#para1{
-  height: 50%;
-  width: 45%;
-}
-#para1 p{
-  font-size: 1rem;
-}
-#pyuri1 p{
-  font-size: 0.87rem;
-}
-#pyuri2 p{
-font-size: 0.87rem;
-}
-#yuri1 h1{
-font-size: 1.8rem;
-}
-#neil1 h1{
-  font-size: 1.8rem;
-}
-#pneil1 p{
-  font-size: 0.86rem;
-}
-#pneil2 p{
-  font-size: 0.86rem;
-}
-#pneil3 p{
-  font-size: 0.86rem;
-}
-#iss h1{
-  font-size: 1.8rem;
-}
-#piss1 p{
-  font-size: 0.86rem;
-}
-#piss2 p{
-  font-size: 0.86rem;
-}
-#piss3 p{
-  font-size: 0.86rem;
-}
-#yaan h1{
-  font-size: 1.8rem;
-}
-#pyaan1 p{
-  font-size: 0.86rem;
-}
-#pyaan2 p{
-  font-size: 0.86rem;
-}
-#mars h1{
-  font-size: 1.9rem;
-}
-#pmars1 p{
-  font-size: 0.86rem;
-}
-#pmars2 p{
-  font-size: 0.86rem;
-}
-#pmars3 p{
-  font-size: 0.86rem;
-}
-#travel h1{
-  font-size: 1.8rem;
-}
-#ptravel1 p{
-  font-size: 0.86rem;
-}
-#ptravel2 p{
-  font-size: 0.86rem;
-}
-#ptravel3 p{
-  font-size: 0.86rem;
-}
-}
-
-@media (min-width:769px) and (max-width:1024px){
   #blue h1{
-    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 0.892rem + 2.51vw, 2.9rem);
+  }
+  #green{
+    width: 290px;
+    height: 270px;
+  }
+  #green p{
+    font-size: clamp(0.7rem, -0.1rem + 1.25vw, 0.9rem);
+  }
+  #blue{
+    width: 370px;
+    height: 170px;
+  }
+  #redBox p{
+    font-size: clamp(0.5rem, -1.1rem + 2.5vw, 0.9rem);
+  }
+  #redBox{
+    width: 290px;
+    height: 260px;
   }
   #img{
-    width: 300px;
-    height: 160px;
-  }
-  #img1{
-    width: 300px;
-    height: 160px;
-  }
-  #video{
-    height: 250px;
     width: 250px;
-  }
-  #text{
-    width: 350px;
-    height: 70px;
-  }
-  #text-h1{
-    font-size: 2.4rem;
-  }
-  #para1{
-    height: 45%;
-    width: 40%;
-  }
-  #para1 p{
-    font-size: 0.9rem;
-  }
-  #pyuri1 p{
-    font-size: 0.7rem;
-  }
-  #pyuri2 p{
-  font-size: 0.7rem;
-  }
-  #yuri1 h1{
-  font-size: 1.5rem;
-  }
-  #neil1 h1{
-    font-size: 1.5rem;
-  }
-  #pneil1 p{
-    font-size: 0.7rem;
-  }
-  #pneil2 p{
-    font-size: 0.7rem;
-  }
-  #pneil3 p{
-    font-size: 0.7rem;
-  }
-  #iss h1{
-    font-size: 1.5rem;
-  }
-  #piss1 p{
-    font-size: 0.7rem;
-  }
-  #piss2 p{
-    font-size: 0.7rem;
-  }
-  #piss3 p{
-    font-size: 0.7rem;
-  }
-  #yaan h1{
-    font-size: 1.4rem;
-  }
-  #pyaan1 p{
-    font-size: 0.7rem;
-  }
-  #pyaan2 p{
-    font-size: 0.7rem;
-  }
-  #mars h1{
-    font-size: 1.5rem;
-  }
-  #pmars1 p{
-    font-size: 0.7rem;
-  }
-  #pmars2 p{
-    font-size: 0.7rem;
-  }
-  #pmars3 p{
-    font-size: 0.7rem;
-  }
-  #travel h1{
-    font-size: 1.4rem;
-  }
-  #ptravel1 p{
-    font-size: 0.7rem;
-  }
-  #ptravel2 p{
-    font-size: 0.7rem;
-  }
-  #ptravel3 p{
-    font-size: 0.7rem;
-  }
-}
-
-@media (min-width:1281px) and (max-width:1442px){
-
-  #blue h1{
-    font-size: 3rem;
-  }
-  #img{
-    width: 350px;
-    height: 200px;
+    height: 130px;
   }
   #img1{
-    width: 350px;
-    height: 200px;
+    width: 250px;
+    height: 130px;
   }
   #video{
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
   }
   #text{
-    width: 400px;
-    height: 100px;
+    width: 380px;
+    height: 90px;
   }
   #text-h1{
-    font-size: 3rem;
+    font-size: clamp(2.5rem, 0.892rem + 2.51vw, 2.9rem);
   }
   #para1{
-    height: 60%;
-    width: 55%;
+    height: 50%;
+    width: 45%;
   }
   #para1 p{
-    font-size: 18px;
+    font-size: clamp(0.7rem, -0.5rem + 1.875vw, 1rem);
   }
   #pyuri1 p{
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #pyuri2 p{
-  font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #yuri1 h1{
-  font-size: 2rem;
+    font-size: clamp(1.5rem, -0.108rem + 2.51vw, 1.9rem);
   }
   #neil1 h1{
-    font-size: 2rem;
+    font-size: clamp(1.5rem, -0.108rem + 2.51vw, 1.9rem);
   }
   #pneil1 p{
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #pneil2 p{
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #pneil3 p{
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #iss h1{
-    font-size: 2rem;
+    font-size: clamp(1.5rem, -0.108rem + 2.51vw, 1.9rem);
   }
   #piss1 p{
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #piss2 p{
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #piss3 p{
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #yaan h1{
-    font-size: 2rem;
+    font-size: clamp(1.5rem, -0.108rem + 2.51vw, 1.9rem);
   }
   #pyaan1 p{
-    font-size: 1rem;
+    font-size: 0.86rem;
   }
   #pyaan2 p{
-    font-size: 1rem;
+    font-size: 0.86rem;
   }
   #mars h1{
-    font-size: 2rem;
+    font-size: clamp(1.5rem, -0.108rem + 2.51vw, 1.9rem);
   }
   #pmars1 p{
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #pmars2 p{
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #pmars3 p{
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #travel h1{
-    font-size: 2rem;
+    font-size: clamp(1.5rem, -0.108rem + 2.51vw, 1.9rem);
   }
   #ptravel1 p{
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #ptravel2 p{
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
   }
   #ptravel3 p{
+    font-size: clamp(0.75rem, 0.147rem + 0.941vw, 0.9rem);
+  }
+  }
+  
+  @media (min-width:769px) and (max-width:1024px){
+    #green{
+      width: 220px;
+      height: 240px;
+    }
+    #green p{
+      font-size: clamp(0.5rem, -0.103rem + 1.255vw, 0.7rem);
+    }
+    #blue{
+      width: 330px;
+      height: 120px;
+    }
+    #redBox p{
+      font-size: clamp(0.5rem, -0.103rem + 1.255vw, 0.7rem);
+    }
+    #redBox{
+      width: 220px;
+      height: 240px;
+    }
+    
+    
+    
+    #blue h1{
+      font-size: clamp(1.75rem, -0.512rem + 4.706vw, 2.5rem);
+    }
+    #img{
+      width: 300px;
+      height: 160px;
+    }
+    #img1{
+      width: 300px;
+      height: 160px;
+    }
+    #video{
+      height: 250px;
+      width: 250px;
+    }
+    #text{
+      width: 350px;
+      height: 70px;
+    }
+    #text-h1{
+      font-size: clamp(1.75rem, -0.512rem + 4.706vw, 2.5rem);
+    }
+    #para1{
+      height: 45%;
+      width: 40%;
+    }
+    #para1 p{
+     font-size: clamp(0.4rem, -0.505rem + 1.882vw, 0.7rem);
+    }
+    #pyuri1 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+    #pyuri2 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+    #yuri1 h1{
+      font-size: clamp(1rem, -0.206rem + 2.51vw, 1.4rem);
+    }
+    #neil1 h1{
+      font-size: clamp(1rem, -0.206rem + 2.51vw, 1.4rem);
+    }
+    #pneil1 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+    #pneil2 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+    #pneil3 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+    #iss h1{
+      font-size: clamp(1rem, -0.206rem + 2.51vw, 1.4rem);
+    }
+    #piss1 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+    #piss2 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+    #piss3 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+    #yaan h1{
+      font-size: clamp(1rem, -0.206rem + 2.51vw, 1.4rem);
+    }
+    #pyaan1 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+    #pyaan2 p{
+      font-size: 0.7rem;
+    }
+    #mars h1{
+      font-size: clamp(1rem, -0.206rem + 2.51vw, 1.4rem);
+    }
+    #pmars1 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+    #pmars2 p{
+      font-size: 0.7rem;
+    }
+    #pmars3 p{
+      font-size: 0.7rem;
+    }
+    #travel h1{
+      font-size: clamp(1rem, -0.206rem + 2.51vw, 1.4rem);
+    }
+    #ptravel1 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+    #ptravel2 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+    #ptravel3 p{
+      font-size: clamp(0.5rem, -0.254rem + 1.569vw, 0.75rem);
+    }
+  }
+  
+  @media (min-width:1281px) and (max-width:1442px){
+  
+    #blue h1{
+      font-size: 3rem;
+    }
+    #img{
+      width: 350px;
+      height: 200px;
+    }
+    #img1{
+      width: 350px;
+      height: 200px;
+    }
+    #video{
+      width: 300px;
+      height: 300px;
+    }
+    #text{
+      width: 400px;
+      height: 100px;
+    }
+    #text-h1{
+      font-size: 3rem;
+    }
+    #para1{
+      height: 60%;
+      width: 55%;
+    }
+    #para1 p{
+      font-size: 18px;
+    }
+    #pyuri1 p{
+      font-size: 1rem;
+    }
+    #pyuri2 p{
+    font-size: 1rem;
+    }
+    #yuri1 h1{
+    font-size: 2rem;
+    }
+    #neil1 h1{
+      font-size: 2rem;
+    }
+    #pneil1 p{
+      font-size: 1rem;
+    }
+    #pneil2 p{
+      font-size: 1rem;
+    }
+    #pneil3 p{
+      font-size: 1rem;
+    }
+    #iss h1{
+      font-size: 2rem;
+    }
+    #piss1 p{
+      font-size: 1rem;
+    }
+    #piss2 p{
+      font-size: 1rem;
+    }
+    #piss3 p{
+      font-size: 1rem;
+    }
+    #yaan h1{
+      font-size: 2rem;
+    }
+    #pyaan1 p{
+      font-size: 1rem;
+    }
+    #pyaan2 p{
+      font-size: 1rem;
+    }
+    #mars h1{
+      font-size: 2rem;
+    }
+    #pmars1 p{
+      font-size: 1rem;
+    }
+    #pmars2 p{
+      font-size: 1rem;
+    }
+    #pmars3 p{
+      font-size: 1rem;
+    }
+    #travel h1{
+      font-size: 2rem;
+    }
+    #ptravel1 p{
+      font-size: 1rem;
+    }
+    #ptravel2 p{
+      font-size: 1rem;
+    }
+    #ptravel3 p{
+      font-size: 1rem;
+    }
+    }
+  
+  
+    @media (min-width:320px) and (max-width:480px){
+      
+  body{
+  display: inline;
+  overflow-x: hidden;
+  flex-direction: wrap;
+  }
+  #nav{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  }
+  #menu a{
     font-size: 1rem;
   }
-  }
-
-
-  @media (min-width:320px) and (max-width:480px){
-    
-body{
-display: inline;
-overflow-x: hidden;
-flex-direction: wrap;
-}
-#nav{
-display: flex;
-flex-direction: column;
-height: auto;
-align-items: center;
-justify-content: center;
-}
-#menu a{
-  font-size: 1rem;
-}
-
-
-
-
-  }
-
-
-
-
-
-
+  
+    }

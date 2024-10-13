@@ -661,10 +661,9 @@ video{
 #neil{
   width: 100%;
   height: 10%;
- background-color: gray;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content:end;
 }
 #neil1{
   width: 100%;
@@ -689,9 +688,10 @@ video{
  
 }
 #neil h1{
+  
   font-size: 2rem;
   color: black;
-  background-color: gray;
+  font-weight: 900;
 }
 #neil-img{
   width: 30%;
@@ -846,7 +846,7 @@ background-size: cover;
   color: white;
   font-size: 1rem;
    text-shadow: #00ccff;
-   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-family:  cursive;
    font-optical-sizing: auto;
    font-weight: bold;
    font-style: normal;
@@ -856,7 +856,7 @@ background-size: cover;
   color: white;
   font-size: 1rempx;
    text-shadow: #00ccff;
-   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-family:  cursive;
    font-optical-sizing: auto;
    font-weight: bold;
    font-style: normal;
@@ -866,7 +866,7 @@ background-size: cover;
   color:white;
   font-size: 1rem;
    text-shadow: #00ccff;
-   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-family:  cursive;
    font-optical-sizing: auto;
    font-weight: bold;
    font-style: normal;
@@ -895,12 +895,11 @@ background-size: cover;
 
 #yaan{
   width: 100%;
-  height: 10%;
+  height: 20%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
 }
 #yaan h1{
   font-size: 2rem;
@@ -933,7 +932,7 @@ background-size: cover;
   font-weight: 700;
   font-size: 1rem;
   color: black;
-  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-family: cursive;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
@@ -966,7 +965,7 @@ background-size: cover;
   font-weight: 700;
    font-size: 1rem;
    color: black;
-   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-family:  cursive;
    font-optical-sizing: auto;
    font-weight: bold;
    font-style: normal;
@@ -1023,7 +1022,7 @@ background-size: cover;
 }
 #mars h1{
   font-size: 2rem;
-  color: black;
+  color: white;
 }
 #mars-img{
   width: 30%;
@@ -1058,7 +1057,7 @@ background-size: cover;
   color: white;
   font-size: 1rem;
    text-shadow: #00ccff;
-   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-family:  cursive;
    font-optical-sizing: auto;
    font-weight: bold;
    font-style: normal;
@@ -1067,7 +1066,7 @@ background-size: cover;
   color: white;
   font-size: 1rempx;
    text-shadow: #00ccff;
-   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-family:  cursive;
    font-optical-sizing: auto;
    font-weight: bold;
    font-style: normal;
@@ -1076,7 +1075,7 @@ background-size: cover;
   color: white;
   font-size: 1rem;
    text-shadow: #00ccff;
-   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-family:  cursive;
    font-optical-sizing: auto;
    font-weight: bold;
    font-style: normal;
@@ -1103,9 +1102,8 @@ background-size: cover;
 
 #travel{
   width: 100%;
-  height: 10%;
- background-color: gray;
-  text-align: center;
+  height: 20%;
+align-items: center;
   display: flex;
   justify-content: center;
 }
@@ -1133,7 +1131,8 @@ background-size: cover;
 }
 #travel h1{
   font-size: 2rem;
-  color: black;
+  color: white;
+  font-weight: 900;
 }
 #travel-img{
   width: 30%;
@@ -1168,7 +1167,7 @@ background-size: cover;
   color: white;
   font-size: 1rem;
    text-shadow: #00ccff;
-   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-family: cursive;
    font-optical-sizing: auto;
    font-weight: bold;
    font-style: normal;
@@ -1177,7 +1176,7 @@ background-size: cover;
   color: white;
   font-size: 1rempx;
    text-shadow: #00ccff;
-   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-family:  cursive;
    font-optical-sizing: auto;
    font-weight: bold;
    font-style: normal;
@@ -1186,7 +1185,7 @@ background-size: cover;
   color: white;
   font-size: 1rem;
    text-shadow: #00ccff;
-   font-family: "Edu AU VIC WA NT Guides", cursive;
+   font-family:  cursive;
    font-optical-sizing: auto;
    font-weight: bold;
    font-style: normal;
